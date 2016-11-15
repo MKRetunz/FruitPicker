@@ -10,14 +10,14 @@ public class FruitHandler : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Fruit(Clone)")
+        /*if (col.gameObject.name == "Fruit(Clone)")
         {
             activeFruit = true;
         }
         else
         {
             activeFruit = false;
-        }
+        }*/
     }
 
     // Use this for initialization
