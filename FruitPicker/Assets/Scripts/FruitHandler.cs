@@ -23,7 +23,7 @@ public class FruitHandler : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        spawnTime = 1f;
+        spawnTime = 10f;
     }
 
     // Update is called once per frame
@@ -32,13 +32,12 @@ public class FruitHandler : MonoBehaviour
         if (activeFruit == false)
         {
             spawnTimer += Time.deltaTime;
-            Debug.Log("Heya");
+            Debug.Log(spawnTimer);
         }
 
         if (spawnTimer >= spawnTime)
         {
             Instantiate(Fruit, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity);
-            
             spawnTimer = 0f;
         }
         
