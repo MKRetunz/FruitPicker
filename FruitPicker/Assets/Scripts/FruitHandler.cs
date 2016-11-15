@@ -13,7 +13,7 @@ public class FruitHandler : MonoBehaviour
     void Start()
     {
         fruitList = new GameObject[1] { Instantiate(Fruit, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as GameObject };
-        spawnTime = 10f;
+        spawnTime = 1f;
     }
 
     // Update is called once per frame

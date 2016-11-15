@@ -35,6 +35,7 @@ public class DragScript : MonoBehaviour {
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
+            rayPoint.y = 1;
             transform.position = rayPoint;
         }
     }
