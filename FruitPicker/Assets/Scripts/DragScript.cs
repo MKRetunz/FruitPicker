@@ -26,7 +26,7 @@ public class DragScript : MonoBehaviour {
 
     void OnMouseUp()
     {
-        dragging = false;
+        Destroy(gameObject);
     }
 
     void Update()
