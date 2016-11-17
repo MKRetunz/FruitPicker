@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class BasketHandler : MonoBehaviour {
-    public int score;
+    public static int score;
 
     void OnCollisionEnter(Collision col)
     {
@@ -10,6 +10,7 @@ public class BasketHandler : MonoBehaviour {
         {
             Destroy(col.gameObject);
             score++;
+            Debug.Log(score);
         }
     }
 

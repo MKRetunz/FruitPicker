@@ -32,7 +32,6 @@ public class FruitHandler : MonoBehaviour
         if (activeFruit == false)
         {
             spawnTimer += Time.deltaTime;
-            Debug.Log(spawnTimer);
         }
 
         if (spawnTimer >= spawnTime)
