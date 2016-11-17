@@ -15,13 +15,14 @@ public class UIHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         playTimer -= Time.deltaTime;
+
+        
 	}
 
     void OnGUI ()
     {
         GUI.color = Color.black;
         GUI.Label(new Rect(10, 10, 100, 20), "Score: " + BasketHandler.score);
-        
-       
+        GUI.Label(new Rect(Screen.width / 2, Screen.height - 40 , 100, 20), playTimer.ToString());
     }
 }
