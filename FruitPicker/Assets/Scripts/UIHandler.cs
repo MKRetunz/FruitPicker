@@ -4,16 +4,14 @@ using UnityEngine.UI;
 
 public class UIHandler : MonoBehaviour {
 
-    bool refreshText;
-
     // Use this for initialization
     void Start () {
-        refreshText = false;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        refreshText = true;
+
 	}
 
     void OnGUI ()
