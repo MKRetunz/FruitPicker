@@ -10,7 +10,6 @@ public class BasketHandler : MonoBehaviour {
         {
             Destroy(col.gameObject);
             score++;
-            Debug.Log(score);
         }
     }
 

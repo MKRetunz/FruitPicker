@@ -8,7 +8,7 @@ public class UIHandler : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        maxTime = 120f;
+        maxTime =   120f;
         playTimer = maxTime;
 	}
 	
